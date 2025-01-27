@@ -7,7 +7,11 @@ bp_suport = Blueprint("support", __name__)
 
 @bp_suport.route("/status", methods=["POST"])
 def status():
-    # Lendo o JSON do corpo da requisição
+    return jsonify({"status":"connected"})
+
+@bp_suport.route("/send", methods=["POST"])
+def send():
+        # Lendo o JSON do corpo da requisição
     data = request.get_json()
 
     # Verificando se o JSON contém o campo "comando"
