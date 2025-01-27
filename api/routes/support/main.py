@@ -1,7 +1,7 @@
 from flask import jsonify, Blueprint, request
 import requests  # Certifique-se de instalar requests: pip install requests
 
-URL_MAQUINA_LOCAL = "http://192.168.1.16:5000/iniciar"
+URL_MAQUINA_LOCAL = "https://8735-2001-12b4-42f-b700-79c0-d20c-3a55-3e31.ngrok-free.app/inicar"
 
 bp_suport = Blueprint("support", __name__)
 
